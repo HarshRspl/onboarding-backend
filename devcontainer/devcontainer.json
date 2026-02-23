@@ -1,0 +1,13 @@
+{
+  "name": "RSPL Java 17",
+  "image": "mcr.microsoft.com/devcontainers/java:17",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17",
+      "installMaven": "true",
+      "mavenVersion": "3.9.6"
+    }
+  },
+  "forwardPorts": [8080],
+  "postCreateCommand": "java -version && mvn -version"
+}
